@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switching View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwitchingViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsg-BU-kU5">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Switch Views" id="Sum-nT-15I">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="oKO-qr-fAD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tsg-BU-kU5" secondAttribute="bottom" id="23h-nI-849"/>
+                            <constraint firstAttribute="trailing" secondItem="Tsg-BU-kU5" secondAttribute="trailing" id="Cks-Tj-SgU"/>
+                            <constraint firstItem="Tsg-BU-kU5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tkv-QS-OK3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="22"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="8zr-Zo-ftO">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="Lef-L5-WVM" customClass="BlueViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zi8-4T-kre"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Y0-9q-8li"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0l8-7t-ro2" customClass="blue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="942-0f-svH">
+                                <rect key="frame" x="155" y="318.5" width="64" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueButtonPressedWithSender:" destination="Lef-L5-WVM" eventType="touchUpInside" id="N1W-6S-2lT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="942-0f-svH" firstAttribute="centerX" secondItem="0l8-7t-ro2" secondAttribute="centerX" id="BgP-Ig-Z3H"/>
+                            <constraint firstItem="942-0f-svH" firstAttribute="centerY" secondItem="0l8-7t-ro2" secondAttribute="centerY" id="PxE-tJ-jOW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIf-B2-DEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="21"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="jab-IM-tuc">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="T8z-2i-inq" customClass="YellowViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ecN-LQ-g4x"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sbb-5d-pbA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0dg-dF-gb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIn-En-BfG">
+                                <rect key="frame" x="140" y="318" width="94" height="30"/>
+                                <state key="normal" title="Press me, too"/>
+                                <connections>
+                                    <action selector="yellowButtonPressedWithSender:" destination="T8z-2i-inq" eventType="touchUpInside" id="fs2-Lz-FaG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EIn-En-BfG" firstAttribute="centerX" secondItem="0dg-dF-gb3" secondAttribute="centerX" id="wtM-Go-NOf"/>
+                            <constraint firstItem="EIn-En-BfG" firstAttribute="centerY" secondItem="0dg-dF-gb3" secondAttribute="centerY" id="x5z-lX-jyN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUT-3y-xED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="29"/>
+        </scene>
+    </scenes>
+</document>
